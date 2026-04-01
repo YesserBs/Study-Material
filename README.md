@@ -60,3 +60,8 @@ Le quartile c'est quoi ?
 - et Q3 est la médiane de la moitié supérieure
 
 Quand le nombre de données est impair, on exclut la médiane pour calculer Q1 et Q3.
+
+Trier les données ?<br>
+sur l'onglet Acceuil > trier<br>
+si c'est pour une seule colonne tu la séléctionne et basta<br>
+si plusieurs il faut toutes les sélectionner. Par défaut ca trie selon la première colonne choisie mais dans tri si tu click sur personalisé tu peux changer pas mal de choses, la colonne, et tu peux meme trier selon plusieurs trucs
