@@ -9,7 +9,8 @@ tags:
 Le principe est simple : utilise cette structure pour créer des notes.
 
 Exemple de structure :
-
+```
+<!-- NOTE -->
 ---
 title: X
 
@@ -19,6 +20,7 @@ tags:
 ---
 
 Contenu...
+```
 
 Je vais mettre ce qui m'est utile : TP, commandes, révision, etc.
 Je créerai un script qui vérifie si la structure du fichier est valide.
