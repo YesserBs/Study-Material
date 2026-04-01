@@ -58,4 +58,5 @@ Le quartile c'est quoi ?
 - Q1 est la médiane de la moitié inférieure des données,
 - Q2 correspond à la médiane
 - et Q3 est la médiane de la moitié supérieure
+
 Quand le nombre de données est impair, on exclut la médiane pour calculer Q1 et Q3.
