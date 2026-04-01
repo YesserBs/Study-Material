@@ -8,8 +8,6 @@ tags:
 Contenu...
 
 ---
-
----
 title: Explications du concept
 tags:
   - concept
