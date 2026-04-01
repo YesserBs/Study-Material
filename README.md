@@ -8,7 +8,7 @@ tags:
 
 Le principe est simple : utilise cette structure pour créer des notes.
 
-Exemple de structure :
+structure des notes:
 ```
 <!-- NOTE -->
 ---
