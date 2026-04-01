@@ -105,3 +105,134 @@ tags:
 - Optimiser les conditions pour éviter les tests inutiles
 - Utiliser des résultats d’une feuille dans une autre (liaison de données)
 - Comprendre la logique globale d’analyse de données et d’automatisation
+
+<!-- NOTE -->
+---
+title: entrée sortie I/O Java IO
+
+tags:
+  - Java
+---
+
+Ca repose sur les flux (streams)<br>
+Il y a deux grandes familles de flux:<br>
+**Input**
+- InputStream (binaire)
+- Reader (texte)
+
+**Output**
+- OutputStream (binaire)
+- Reader/writer (texte)
+
+ce qui suit est le résumé d'Ablaye Sow, je vais garder le nécessaire et bien le changer plus tard
+```
+// Entree sortie en java
+// public class abstraire 
+// {
+//     InputStream  a;
+//     abstract int  read();
+//     int read(byte []buf);
+//     int read(byte []buf,int offset,int len);
+//     long skip(long count);
+//     public int available();
+//     void clase();
+// };
+//On a une dualité entre read et write
+
+/*
+  ==================Entrée/sortie Standard ========================
+  la classe java.lang.System offre un accès à 
+    - Sytem.in 
+    - Sytem.out
+    - System.err
+
+
+    exemple:
+        try
+        {
+            int i = System.in.read();
+            byte b = (byte) i;
+            int nbok = System.in.available();
+            if(nbok > 0)
+            {
+                byte[] donnees = new byte[nbok];
+                System.in.read(donnes);
+            }
+        }catch(IOException e)
+        {
+            System.out.println("exception"+e);
+        }
+
+    On a également la classe DataInputStream
+
+    DataInputStream(InputStream in);
+    int readInt()
+    float readFloat();
+    String readString();
+
+    a coté on a aussi la classe DataOutStream
+    avec les méthodes
+    void writeInt(int v);
+    void writeFloat(float f);
+
+
+
+
+    Ces deux classes, on cas d'erreurs lancer une exception du type IOException
+
+
+    On a aussi les lectures bufferisé
+    BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
+
+    try
+    {
+        int i = Integer.parseInt(buf.readLine());
+
+    }
+        catch(NumerFormatException e)
+        {
+          .
+          .
+          .
+        }
+
+    BufferedReader in = new BufferedReader(new FileReader("idiom.txt"));
+    String line;
+    while(line  = in.readLine() != null)
+    {
+        sop((line);
+
+    }
+    in.close();
+
+
+    ==============Serialisation===============
+    la sérialisation est le fait de sauvegarder des données dans un fichier
+
+    FileOutputStream nomfichier = new FileOutputStream("fichier.tmp");
+    objectOutputStream fluxobj ) new objectOutputStream(nomfichier);
+    flux.onjet.writeObject("aujoud'hui ");
+    fluxobj.write(new Date());
+    flux.obj.write(new String ("Demain"));
+
+    nomfichier.close();
+
+    =================Désérialisation ================
+    FileInputStream input = new FileInputStream("fichier.tmp");
+    object.input stream nomfichier = new ObjectInputStream(input);
+    String s = (String )monfichier.readObject();
+    Date d = (Date) nomfichier.readObject();
+    s = (String)nomfichier.readObject();
+
+
+Exercice:
+--------
+
+    On cherche à écrire un programme qu effectue la copie de fichiers.
+        1 - Ecrire dans un premier temps, une copie de l'entrée std(System.in) dans la sortie standard(System.out)
+        2 - Modifier le programme pour qu'il prend 2 fichiers sur la ligne de commande Si ceux-ci sont spécifiés, sinon on utilise System.in et System.out
+        3 - Utiliser les Entrés/Sorties bufferisés (BufferedInputStream et BufferedOutputStream)
+
+        4 - modifier le programme pour utiliser un tableau de 8 octets de caractères pour le transfert.
+*/
+```
