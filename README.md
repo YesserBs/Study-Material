@@ -78,3 +78,30 @@ Exemples:
 =PERCENTILE.INC(A1:A10 ; 0,5)    → médiane
 =PERCENTILE.INC(A1:A10 ; 0,9)    → 90%
 ```
+Rq: en pratique on utilise toujours .INC ne cherche meme pas à comprendre .EXC
+
+<!-- NOTE -->
+---
+title: X
+
+tags:
+  - Y
+  - Z
+---
+
+éléments à maitriser du TP 1
+- Utiliser les fonctions statistiques : MIN, MAX, MOYENNE, MEDIANE
+- Calculer et interpréter les quartiles (Q1, Q2, Q3)
+- Utiliser QUARTILE.INC et PERCENTILE.INC
+- Comprendre la différence entre .INC et .EXC
+- Manipuler correctement les plages de données (ex : B$2:B$1288)
+- Écrire des formules copiables sur plusieurs cellules
+- Maîtriser la fonction SI (conditions simples et imbriquées)
+- Utiliser ET pour combiner plusieurs conditions
+- Transformer une variable quantitative en qualitative
+- Méthode des intervalles de même largeur
+- Méthode des intervalles de même effectif (quantiles)
+- Construire des catégories à partir de seuils (quartiles, percentiles)
+- Optimiser les conditions pour éviter les tests inutiles
+- Utiliser des résultats d’une feuille dans une autre (liaison de données)
+- Comprendre la logique globale d’analyse de données et d’automatisation
