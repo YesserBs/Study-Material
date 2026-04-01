@@ -1,6 +1,7 @@
 <!-- NOTE -->
 ---
 title: Explications du concept
+
 tags:
   - concept
 ---
@@ -11,6 +12,7 @@ Exemple de structure :
 
 ---
 title: X
+
 tags:
   - Y
   - Z
@@ -24,6 +26,7 @@ Je créerai un script qui vérifie si la structure du fichier est valide.
 <!-- NOTE -->
 ---
 title: Le dollar $ sur Excel
+
 tags:
   - Excel
 ---
