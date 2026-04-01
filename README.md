@@ -65,3 +65,16 @@ Trier les données ?<br>
 sur l'onglet Acceuil > trier<br>
 si c'est pour une seule colonne tu la séléctionne et basta<br>
 si plusieurs il faut toutes les sélectionner. Par défaut ca trie selon la première colonne choisie mais dans tri si tu click sur personalisé tu peux changer pas mal de choses, la colonne, et tu peux meme trier selon plusieurs trucs
+
+pourcentile ?<br>
+Les quartiles sont des cas particuliers de centiles :
+- Q1 = 25e centile
+- Q2 = 50e centile (médiane)
+- Q3 = 75e centile
+
+Exemples:
+```
+=PERCENTILE.INC(A1:A10 ; 0,25)   → 25%
+=PERCENTILE.INC(A1:A10 ; 0,5)    → médiane
+=PERCENTILE.INC(A1:A10 ; 0,9)    → 90%
+```
