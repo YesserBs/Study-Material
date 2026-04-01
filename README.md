@@ -22,7 +22,7 @@ tags:
 Contenu...
 ```
 
-Je vais mettre ce qui m'est utile : TP, commandes, révision, etc.
+Je vais mettre ce qui m'est utile : TP, commandes, révision, etc.<br>
 Je créerai un script qui vérifie si la structure du fichier est valide.
 
 <!-- NOTE -->
