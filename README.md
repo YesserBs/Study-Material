@@ -1,21 +1,14 @@
----
-title: X
-tags:
-  - Y
-  - Z
----
-
-Contenu...
-
-===== NOTE =====
+<!-- NOTE -->
 ---
 title: Explications du concept
 tags:
   - concept
 ---
 
-Le principe est simple utilise cette structure pour créer des notes
-```
+Le principe est simple : utilise cette structure pour créer des notes.
+
+Exemple de structure :
+
 ---
 title: X
 tags:
@@ -25,20 +18,18 @@ tags:
 
 Contenu...
 
----
-```
-je vais mettre ce qui m'est utile (TP, commandes, révision etc..)
-Je créerais un script vérifie si la structure du fichier est valide
+Je vais mettre ce qui m'est utile : TP, commandes, révision, etc.
+Je créerai un script qui vérifie si la structure du fichier est valide.
 
-===== NOTE =====
+<!-- NOTE -->
 ---
-title: Le dolar $ sur Excel
+title: Le dollar $ sur Excel
 tags:
   - Excel
 ---
 
-En gros quand tu utilise le dolar tu vérouille une case, selon l'emplacement du dolar `$` (mid ou éxterieur) il peut etre pris en compte ou ignoré
-éxterieur (ex: `$A1 + B1`): pour les lignes la case `A1` locked, sinon ignorée
-milieu (ex: `A$1 + B1`): pour les colonnes la case `A1` locked, sinon ignorée
+En gros, quand tu utilises le dollar, tu verrouilles une référence de cellule selon son emplacement.
 
-===== NOTE =====
+- $A1 : colonne verrouillée
+- A$1 : ligne verrouillée
+- $A$1 : ligne et colonne verrouillées
