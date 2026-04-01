@@ -38,3 +38,24 @@ En gros, quand tu utilises le dollar, tu verrouilles une référence de cellule 
 - $A1 : colonne verrouillée
 - A$1 : ligne verrouillée
 - $A$1 : ligne et colonne verrouillées
+
+conditions :
+
+style typique:
+```
+=SI(condition ; valeur_si_vrai ; valeur_si_faux)
+```
+exemple:
+```
+=SI(E1>100 ; "OK" ; "Pas OK")
+```
+bien entendu on peut faire des imbrications:
+```
+=SI(E1>100 ; "Bon" ; SI(E1>80 ; "Assez bon" ; "Problème"))
+```
+
+Le quartile c'est quoi ?
+- Q1 est la médiane de la moitié inférieure des données,
+- Q2 correspond à la médiane
+- et Q3 est la médiane de la moitié supérieure
+Quand le nombre de données est impair, on exclut la médiane pour calculer Q1 et Q3.
