@@ -236,3 +236,13 @@ Exercice:
         4 - modifier le programme pour utiliser un tableau de 8 octets de caractères pour le transfert.
 */
 ```
+
+<!-- NOTE -->
+---
+title: l'adresse mail de l'univ avec sorbonne
+
+tags:
+  - univ_stuff
+---
+
+edu.sorbonne-paris-nord.fr
