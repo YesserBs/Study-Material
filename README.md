@@ -433,3 +433,51 @@ tags:
 ---
 
 edu.sorbonne-paris-nord.fr
+
+
+
+<!-- NOTE -->
+---
+title: Partie stats en proba
+
+tags:
+  - proba
+---
+
+J'expliquerais une autre fois :
+## Estimateurs
+
+Un estimateur est une valeur calculée à partir des données pour approximer un paramètre inconnu.
+
+Exemple :
+La moyenne empirique :
+
+$$
+\hat{\mu} = \frac{1}{n} \sum X_i
+$$
+
+---
+
+## Méthode des moments
+
+On égalise les moments théoriques avec les moments empiriques.
+
+Exemple :
+E(X) = μ → on remplace par la moyenne empirique
+
+Donc :
+μ ≈ moyenne des données
+
+---
+
+## Maximum de vraisemblance (MLE)
+
+Objectif : trouver le paramètre qui rend les données les plus probables.
+
+### Étapes :
+1. Écrire la vraisemblance :
+   produit des probabilités ou densités
+2. Prendre le logarithme
+3. Dériver
+4. Résoudre : dérivée = 0
+5. Vérifier que la dérivée seconde est négative (maximum)
