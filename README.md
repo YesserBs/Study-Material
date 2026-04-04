@@ -106,6 +106,17 @@ tags:
 - Utiliser des résultats d’une feuille dans une autre (liaison de données)
 - Comprendre la logique globale d’analyse de données et d’automatisation
 
+TP 2 c'est les régressions linéaires, on s'est également interessé à (...) et Chi_2
+
+Chi_2 c'est en gros le score de bizarrerie (par rapport à ce que tu attends comme valeurs)
+
+Chi_au_carré = somme( (valeur_observée - valeur_attendue)**2 / valeur_attendue )
+
+Au final on obtient une p-value:
+- p < 0.05 → 🚨 “c’est louche !!”
+- p > 0.05 → 😌 “ça passe”
+
+
 <!-- NOTE -->
 ---
 title: entrée sortie I/O Java IO
