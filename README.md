@@ -82,11 +82,10 @@ Rq: en pratique on utilise toujours .INC ne cherche meme pas à comprendre .EXC
 
 <!-- NOTE -->
 ---
-title: X
+title: Avancement cour et TP
 
 tags:
-  - Y
-  - Z
+  - Excel
 ---
 
 éléments à maitriser du TP 1
@@ -136,6 +135,215 @@ ou pas (long term it's fine: attendu : 33 / 33 / 33 observé : 35 / 30 / 34)
 
 Détail juste à connaitre:
 - dans le cas ou on utilise Chi pour deux variables ca nous renseigne sur l'indpéndence
+
+
+Le reste on le verra une autre fois :
+
+une liste des differentes notions à comprendre (encore au format ChatGPT pour l'instant):
+```
+# 🧠 📌 COURS 1 — (collecte + stats descriptives)
+
+👉 Je ne mets que ce qui peut tomber / ce qui demande de réfléchir
+
+## 🔹 Collecte des données
+
+* Méthodes d’échantillonnage :
+
+  * aléatoire
+  * stratifié
+  * systématique
+  * grappes
+  * quotas
+    ➡️ savoir **les distinguer + reconnaître dans un exercice**
+
+* Différence :
+
+  * enquête vs expérimentation
+
+* Notion de **facteur** :
+
+  * qualitatif vs quantitatif
+
+---
+
+## 🔹 Excel / tableur
+
+* Références :
+
+  * relative vs absolue ($) ⚠️ classique d’examen
+
+* Fonctions :
+
+  * MOYENNE
+  * SOMME
+  * SI
+  * NB.SI
+  * SOMMEPROD
+    ➡️ surtout comprendre **quand les utiliser**
+
+---
+
+## 🔹 Statistiques descriptives
+
+* Moyenne (arithmétique, géométrique, harmonique)
+  ➡️ savoir **quand utiliser laquelle**
+
+* Médiane / quartiles
+  ➡️ interprétation (distribution)
+
+* Variance / écart-type
+  ➡️ mesure de dispersion
+
+* Coefficient de variation
+  ➡️ comparer des séries
+
+---
+
+# 🧠 📌 COURS 2 — (le plus important)
+
+👉 Celui-là est **beaucoup plus stratégique pour l’examen**
+
+---
+
+## 🔹 Variables quantitatives
+
+### 1. Covariance
+
+* Signe (positif / négatif)
+* Limite : difficile à interpréter
+
+---
+
+### 2. Corrélation linéaire (r) ⭐⭐⭐
+
+* Interprétation :
+
+  * proche de 1 → forte relation +
+  * proche de -1 → forte relation -
+  * proche de 0 → pas de lien linéaire
+
+* ⚠️ piège :
+
+  * r = 0 ≠ indépendance
+
+---
+
+### 3. Normalisation
+
+* Centrage
+* Réduction (écart-type)
+  ➡️ comprendre **pourquoi on le fait**
+
+---
+
+### 4. Régression linéaire ⭐⭐⭐
+
+* Modèle :
+
+  * y = ax + b
+
+* Idée :
+
+  * prédire y à partir de x
+  * minimiser l’erreur
+
+➡️ savoir interpréter :
+
+* a (pente)
+* b (origine)
+
+---
+
+### 5. Coefficient de détermination (r²) ⭐⭐⭐
+
+* Interprétation :
+
+  * part de variance expliquée
+
+➡️ savoir répondre :
+
+* “le modèle explique X% de y”
+
+---
+
+## 🔹 Variables qualitatives
+
+### 6. Tableau de contingence ⭐⭐
+
+* Lire un tableau
+* Comprendre :
+
+  * effectifs croisés
+  * totaux
+
+---
+
+### 7. Indépendance ⭐⭐⭐
+
+* Comprendre l’idée :
+
+  * X et Y indépendants ou non
+
+---
+
+### 8. Test du χ² ⭐⭐⭐
+
+* Logique :
+
+  * comparer observé vs attendu
+
+* Calcul attendu :
+
+  * (total ligne × total colonne) / total
+
+* Interprétation :
+
+  * χ² élevé → dépendance
+  * χ² faible → indépendance
+
+---
+
+# 🔥 PRIORITÉS (TRÈS IMPORTANT)
+
+Si tu veux optimiser ton temps :
+
+## 🎯 Niveau 1 (indispensable)
+
+* Corrélation (r)
+* r²
+* Régression linéaire
+* Test du χ²
+* Méthodes d’échantillonnage
+
+---
+
+## 🎯 Niveau 2 (important)
+
+* Variance / écart-type
+* Quartiles
+* Tableau de contingence
+* Normalisation
+
+---
+
+## 🎯 Niveau 3 (secondaire)
+
+* Covariance (juste compréhension)
+* Moyennes géométrique / harmonique
+
+---
+
+# 🧠 RÉSUMÉ FINAL
+
+👉 Tu dois surtout savoir répondre à ces questions :
+
+* Est-ce que 2 variables sont liées ? → r ou χ²
+* Est-ce que je peux prédire ? → régression
+* Est-ce que mon modèle est bon ? → r²
+* Comment j’ai obtenu mes données ? → échantillonnage
+```
+
+
 
 <!-- NOTE -->
 ---
@@ -214,6 +422,7 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 ```
 File → FileStream → (Buffered) → (Data ou Object)
 ```
+
 
 <!-- NOTE -->
 ---
