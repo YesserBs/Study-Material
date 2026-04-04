@@ -112,10 +112,30 @@ Chi_2 c'est en gros le score de bizarrerie (par rapport à ce que tu attends com
 
 Chi_au_carré = somme( (valeur_observée - valeur_attendue)**2 / valeur_attendue )
 
-Au final on obtient une p-value:
+Chi est bas -> C'est bon signe
+
+Mais Chi2 seul ne suffit pas car ca dépend d'un certain **degré de liberté** je te balance seulement des mots clés: tolérance au hasard, ddl = 2 ou ddl = 1
+
+Donc on calcule une p-value (probabilité que ca soit grave):
 - p < 0.05 → 🚨 “c’est louche !!”
 - p > 0.05 → 😌 “ça passe”
 
+sur Excel Khideux et p-value devraient etre:
+```
+=TEST.KHIDEUX(observé; attendu)
+```
+```
+=LOI.KHIDEUX.DROITE(chi2; ddl)
+```
+
+quand utilisée ?
+- check si notre hypothès (par ex: loi uniforme) est correcte (pas trop irl)
+- comparaison aux années précedentes
+- nous dit si c'est juste du bruit et qu'il n'y a pas a s'inquieter meme si on voit du 25 au lieu de 33
+ou pas (long term it's fine: attendu : 33 / 33 / 33 observé : 35 / 30 / 34) 
+
+Détail juste à connaitre:
+- dans le cas ou on utilise Chi pour deux variables ca nous renseigne sur l'indpéndence
 
 <!-- NOTE -->
 ---
