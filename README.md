@@ -351,10 +351,35 @@ Variables quantitatives:
 1. covariance : pas pertinnante, juste pour savoir si les vars évoluent dans le meme sense, opposé ou aucune lisaison
 2. corrélation (r) : connaitre la force du lien + sens du lien (croissant ou décroissant)
 3. régression linéaire : prédire
-4. coeff de détermination (r carré) : vérification de la qualité du modèle
+4. coeff de détermination (r carré) : vérification de la qualité du modèle<br>
 Variables qualitatives:
 5. tableau de contingence : en gros c'est une organisation des données suivie généralement par Chi2
 6. Test du Chi2: tester le lien (la seule qui dit si il y a dépendance ou pas entre les variables)
+
+**covariance**:
+```
+= COVARIANCE.PEARSON(plage1; plage2)
+```
+ou peut etre COVariance.p<br>
+
+**corrélation r**:
+```
+=COEFFICIENT.CORRELATION(plage1;plage2)
+```
+**regr linéaire**
+Tu peux:
+- soit choisir les plages > faire un nuage de points > ajouter une courbe de tendance > cocher les cases pour afficher la courbe et r carré
+- soit trouver manuellement la pente et l'ord à l'origine avec :
+```
+=DROITEREG(U2:U24; T2:T24; VRAI; FAUX)
+```
+juste à coté de la case de droitreg devrait s'afficher l'ordonnée à l'origine<br>
+**tableau de contingence**<br>
+le principe est simple en soi, comme vu en proba pour lois marginales c'est des simpels equations à deux variables
+check this if you want : https://www.youtube.com/watch?v=ZvmpvRYoPgE
+**Test du Chi2**
+poser l'hypothès d'indépendance H0, puis on montre H1 qu'ils sont dépendants:
+
 
 <!-- NOTE -->
 ---
