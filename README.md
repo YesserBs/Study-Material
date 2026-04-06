@@ -33,6 +33,8 @@ tags:
   - Excel
 ---
 
+#### cour 1
+
 En gros, quand tu utilises le dollar, tu verrouilles une référence de cellule selon son emplacement.
 
 - $A1 : colonne verrouillée
@@ -88,6 +90,7 @@ tags:
   - Excel
 ---
 
+#### cour 1
 éléments à maitriser du TP 1
 - Utiliser les fonctions statistiques : MIN, MAX, MOYENNE, MEDIANE
 - Calculer et interpréter les quartiles (Q1, Q2, Q3)
@@ -105,6 +108,7 @@ tags:
 - Utiliser des résultats d’une feuille dans une autre (liaison de données)
 - Comprendre la logique globale d’analyse de données et d’automatisation
 
+#### cour 2
 TP 2 c'est les régressions linéaires, on s'est également interessé à (...) et Chi_2
 
 Chi_2 c'est en gros le score de bizarrerie (par rapport à ce que tu attends comme valeurs)
@@ -342,8 +346,15 @@ Si tu veux optimiser ton temps :
 * Est-ce que mon modèle est bon ? → r²
 * Comment j’ai obtenu mes données ? → échantillonnage
 ```
-
-
+Version donnée par Chat deprecated, c'est ces explications qu'on va garder :<br>
+Variables quantitatives:
+1. covariance : pas pertinnante, juste pour savoir si les vars évoluent dans le meme sense, opposé ou aucune lisaison
+2. corrélation (r) : connaitre la force du lien + sens du lien (croissant ou décroissant)
+3. régression linéaire : prédire
+4. coeff de détermination (r carré) : vérification de la qualité du modèle
+Variables qualitatives:
+5. tableau de contingence : en gros c'est une organisation des données suivie généralement par Chi2
+6. Test du Chi2: tester le lien (la seule qui dit si il y a dépendance ou pas entre les variables)
 
 <!-- NOTE -->
 ---
