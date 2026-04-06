@@ -168,7 +168,8 @@ Tu peux:
 juste à coté de la case de droitreg devrait s'afficher l'ordonnée à l'origine<br>
 **tableau de contingence**<br>
 le principe est simple en soi, comme vu en proba pour lois marginales c'est des simpels equations à deux variables
-check this if you want : https://www.youtube.com/watch?v=ZvmpvRYoPgE
+check this if you want : https://www.youtube.com/watch?v=ZvmpvRYoPgE<br>
+
 **Test du Chi2**
 poser l'hypothès d'indépendance H0, puis on montre H1 qu'ils sont dépendants:
 très bonne vidéo: https://www.youtube.com/watch?v=-Xn1nmHjnHU
