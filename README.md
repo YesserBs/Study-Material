@@ -296,7 +296,7 @@ Objectif : trouver le paramètre qui rend les données les plus probables.
 
 <!-- NOTE -->
 ---
-title: cmc_estimateurs
+title: cmc_stat1
 
 tags:
   - proba
@@ -320,7 +320,7 @@ tags:
 ####  🔹 Instance
 
 * Instance = une exécution de l’expérience aléatoire
-* → donne une issue concrète (valeur, résultat)
+* → donne une issue concrète (valeur, résultat pas forcément un réel qu'on peut "manipuler")
 
 ####  🔹 Omega
 
@@ -372,3 +372,5 @@ theta_hat_obs = g(x1, ..., xn)
 
 * Estimateur = fonction
 * Estimation = valeur retournée
+
+Pour le moment tu dois capter que (X1, ..., Xn) est un échantillon ou chaque élément suit la VAR X, et les valeurs concrètes observées c'est (x1, ..., xn), un estimateur c'est une fonction qui va nous permetre d'estimer les parametres, l'estimation est l'application de la fonction aux données qu'on a, qu'on a observé.
