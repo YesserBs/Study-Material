@@ -310,3 +310,79 @@ Objectif : trouver le paramètre qui rend les données les plus probables.
 3. Dériver
 4. Résoudre : dérivée = 0
 5. Vérifier que la dérivée seconde est négative (maximum)
+
+
+<!-- NOTE -->
+---
+title: cmc_estimateurs
+
+tags:
+  - proba
+  - stats
+---
+
+#### 🎯 Objectif
+
+* Objectif : ( P(\text{event}) = ? )
+* Chercher les probabilités → comprendre / modéliser le monde
+
+#### 🌍 Le monde
+
+* Monde = ensemble d’expériences aléatoires
+
+#### 🎲 Expérience aléatoire
+
+* Expérience aléatoire = phénomène qu’on veut modéliser
+* Issues connues mais imprévisibles (liées au hasard)
+
+#### 🔹 Instance
+
+* Instance = une exécution de l’expérience aléatoire
+* → donne une issue concrète (valeur, résultat)
+
+#### 🔹 Ω (oméga)
+
+* ( \Omega ) = ensemble de toutes les instances possibles
+
+#### 🔹 Event (événement)
+
+* Event = sous-ensemble de ( \Omega )
+
+#### 🔹 Variable aléatoire (VAR)
+
+* ( X ) = fonction qui associe à chaque instance ( \omega \in \Omega ) un réel
+
+#### 🔹 Échantillon (aléatoire)
+
+* ( (X_1, ..., X_n) )
+* avec :
+  [
+  X_i(\omega) = X(\omega_i)
+  ]
+
+#### 🔹 Échantillon observé
+
+* ( (x_1, ..., x_n) )
+* avec :
+  [
+  x_i = X_i(\omega)
+  ]
+
+#### 🔹 Estimateur
+
+* Estimateur = fonction des variables aléatoires :
+  [
+  \hat{\theta} = g(X_1, ..., X_n)
+  ]
+
+#### 🔹 Estimation
+
+* Estimation = évaluation de l’estimateur sur les données :
+  [
+  \hat{\theta}_{obs} = g(x_1, ..., x_n)
+  ]
+
+#### Remarque
+
+* Estimateur = fonction
+* Estimation = valeur retournée
