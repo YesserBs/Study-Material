@@ -31,9 +31,7 @@ title: Le dollar $ sur Excel
 
 tags:
   - Excel
----
-
-#### cour 1
+#### ## cour 1
 
 En gros, quand tu utilises le dollar, tu verrouilles une référence de cellule selon son emplacement.
 
@@ -88,9 +86,7 @@ title: Avancement cour et TP
 
 tags:
   - Excel
----
-
-#### cour 1
+#### ## cour 1
 éléments à maitriser du TP 1
 - Utiliser les fonctions statistiques : MIN, MAX, MOYENNE, MEDIANE
 - Calculer et interpréter les quartiles (Q1, Q2, Q3)
@@ -196,9 +192,7 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 * tu manipules des fichiers simples (texte, image, etc.)
 * tu veux lire/écrire des données brutes
 
----
-
-## ⚡ Buffer (performance)
+####  ⚡ Buffer (performance)
 
 * **`BufferedInputStream`** → lire plus vite
 * **`BufferedOutputStream`** → écrire plus vite
@@ -209,9 +203,7 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 * optimisation nécessaire
 * (souvent en wrap autour de fis/fos)
 
----
-
-## 🔢 Données typées
+####  🔢 Données typées
 
 * **`DataInputStream`** → lire `int`, `double`, `boolean`, `String`
 * **`DataOutputStream`** → écrire ces types
@@ -223,9 +215,7 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 
 ⚠️ Toujours lire dans le même ordre que l’écriture
 
----
-
-## 🧬 Objets (sérialisation)
+####  🧬 Objets (sérialisation)
 
 * **`ObjectOutputStream`** → écrire un objet (`writeObject`)
 * **`ObjectInputStream`** → lire un objet (`readObject`)
@@ -235,18 +225,14 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 * tu veux sauvegarder un objet complet
 * (classe doit `implements Serializable`)
 
----
-
-## 🧠 Règle simple à retenir
+####  🧠 Règle simple à retenir
 
 * fichier simple → **FileStream**
 * performance → **Buffered**
 * types (`int`, etc.) → **DataStream**
 * objet complet → **ObjectStream**
 
----
-
-## 🧩 Schéma mental
+####  🧩 Schéma mental
 
 ```
 File → FileStream → (Buffered) → (Data ou Object)
@@ -285,9 +271,7 @@ $$
 \hat{\mu} = \frac{1}{n} \sum X_i
 $$
 
----
-
-## Méthode des moments
+####  Méthode des moments
 
 On égalise les moments théoriques avec les moments empiriques.
 
@@ -297,9 +281,7 @@ E(X) = μ → on remplace par la moyenne empirique
 Donc :
 μ ≈ moyenne des données
 
----
-
-## Maximum de vraisemblance (MLE)
+####  Maximum de vraisemblance (MLE)
 
 Objectif : trouver le paramètre qui rend les données les plus probables.
 
@@ -323,66 +305,70 @@ tags:
 
 #### 🎯 Objectif
 
-* Objectif : ( P(\text{event}) = ? )
+* Objectif : `P(event) = ?`
 * Chercher les probabilités → comprendre / modéliser le monde
 
 #### 🌍 Le monde
 
 * Monde = ensemble d’expériences aléatoires
 
-#### 🎲 Expérience aléatoire
+####  🎲 Expérience aléatoire
 
 * Expérience aléatoire = phénomène qu’on veut modéliser
 * Issues connues mais imprévisibles (liées au hasard)
 
-#### 🔹 Instance
+####  🔹 Instance
 
 * Instance = une exécution de l’expérience aléatoire
 * → donne une issue concrète (valeur, résultat)
 
-#### 🔹 Ω (oméga)
+####  🔹 Omega
 
-* ( \Omega ) = ensemble de toutes les instances possibles
+* `Omega` = ensemble de toutes les instances possibles
 
-#### 🔹 Event (événement)
+####  🔹 Event (événement)
 
-* Event = sous-ensemble de ( \Omega )
+* Event = sous-ensemble de `Omega`
 
-#### 🔹 Variable aléatoire (VAR)
+####  🔹 Variable aléatoire (VAR)
 
-* ( X ) = fonction qui associe à chaque instance ( \omega \in \Omega ) un réel
+* `X` = fonction qui associe à chaque instance `w in Omega` un réel
 
-#### 🔹 Échantillon (aléatoire)
+####  🔹 Échantillon (aléatoire)
 
-* ( (X_1, ..., X_n) )
+* `(X1, ..., Xn)`
 * avec :
-  [
-  X_i(\omega) = X(\omega_i)
-  ]
 
-#### 🔹 Échantillon observé
+```
+Xi(w) = X(wi)
+```
 
-* ( (x_1, ..., x_n) )
+####  🔹 Échantillon observé
+
+* `(x1, ..., xn)`
 * avec :
-  [
-  x_i = X_i(\omega)
-  ]
 
-#### 🔹 Estimateur
+```
+xi = Xi(w)
+```
+
+####  🔹 Estimateur
 
 * Estimateur = fonction des variables aléatoires :
-  [
-  \hat{\theta} = g(X_1, ..., X_n)
-  ]
 
-#### 🔹 Estimation
+```
+theta_hat = g(X1, ..., Xn)
+```
+
+####  🔹 Estimation
 
 * Estimation = évaluation de l’estimateur sur les données :
-  [
-  \hat{\theta}_{obs} = g(x_1, ..., x_n)
-  ]
 
-#### Remarque
+```
+theta_hat_obs = g(x1, ..., xn)
+```
+
+####  🔁 Remarque
 
 * Estimateur = fonction
 * Estimation = valeur retournée
