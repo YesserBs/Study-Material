@@ -510,3 +510,28 @@ theta_hat_obs = g(x1, ..., xn)
 * Estimation = valeur retournée
 
 Pour le moment tu dois capter que (X1, ..., Xn) est un échantillon ou chaque élément suit la VAR X, et les valeurs concrètes observées c'est (x1, ..., xn), un estimateur c'est une fonction qui va nous permetre d'estimer les parametres, l'estimation est l'application de la fonction aux données qu'on a, qu'on a observé.
+
+<!-- NOTE -->
+---
+title: saisie / input en java 
+
+tags:
+  - java
+---
+
+```
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Entrez votre nom : ");
+        String nom = sc.nextLine();
+
+        System.out.println("Bonjour " + nom + ");
+
+        sc.close();
+    }
+}
+```
