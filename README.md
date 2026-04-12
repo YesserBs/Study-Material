@@ -194,8 +194,8 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 
 ####  ⚡ Buffer (performance)
 
-* **`BufferedInputStream`** → lire plus vite
-* **`BufferedOutputStream`** → écrire plus vite
+* **`BufferedInputStream (bis)`** → lire plus vite
+* **`BufferedOutputStream (bos)`** → écrire plus vite
 
 👉 À utiliser quand :
 
@@ -205,8 +205,9 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 
 ####  🔢 Données typées
 
-* **`DataInputStream`** → lire `int`, `double`, `boolean`, `String`
-* **`DataOutputStream`** → écrire ces types
+* **`DataInputStream (dis)`** → lire `int`, `double`, `boolean`, `String`
+* **`DataOutputStream (dos)`** → écrire ces types
+* `dis dos dot dat`
 
 👉 À utiliser quand :
 
@@ -219,6 +220,7 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 
 * **`ObjectOutputStream`** → écrire un objet (`writeObject`)
 * **`ObjectInputStream`** → lire un objet (`readObject`)
+* le fichier sera `.ser`
 
 👉 À utiliser quand :
 
@@ -237,7 +239,141 @@ It's still too CharGPTish, i will change it, mais au moins ca avance:
 ```
 File → FileStream → (Buffered) → (Data ou Object)
 ```
+---
 
+à faire une autre fois, truc qui concerne les excpetions:
+```
+# 📚 🔹 Les parties du cours à maîtriser sur les exceptions
+
+---
+
+# 1️⃣ 🔥 Qu’est-ce qu’une exception ?
+
+* Définition
+* Pourquoi ça existe
+* Différence :
+
+  * erreur logique vs exception
+  * erreur vs exception (`Error` vs `Exception`)
+
+---
+
+# 2️⃣ 🧠 La hiérarchie des exceptions
+
+👉 Très important
+
+* `Throwable`
+
+  * `Error`
+  * `Exception`
+
+    * `RuntimeException`
+    * autres exceptions (checked)
+
+👉 À connaître :
+
+* différence **checked vs unchecked**
+
+---
+
+# 3️⃣ ⚠️ Exceptions checked vs unchecked
+
+👉 INDISPENSABLE
+
+* checked (obligatoire à gérer)
+* unchecked (runtime)
+
+👉 comprendre :
+
+* pourquoi Java impose certaines
+* quand utiliser l’un ou l’autre
+
+---
+
+# 4️⃣ 🧩 Bloc `try / catch`
+
+* syntaxe
+* plusieurs `catch`
+* ordre des catch (⚠️ piège)
+* type d’exception
+
+---
+
+# 5️⃣ 🔄 `finally`
+
+* rôle
+* quand il s’exécute
+* cas particuliers
+
+---
+
+# 6️⃣ 🚀 `throw`
+
+* lancer une exception manuellement
+* cas d’utilisation
+
+---
+
+# 7️⃣ 📢 `throws`
+
+* déclaration dans une méthode
+* différence avec `throw`
+* propagation des exceptions
+
+---
+
+# 8️⃣ 🛠️ Créer ses propres exceptions
+
+* classe qui étend `Exception`
+* ou `RuntimeException`
+* cas d’usage
+
+---
+
+# 9️⃣ 🔁 Propagation des exceptions
+
+* comment une exception remonte
+* stack trace (idée générale)
+
+---
+
+# 🔟 ⚠️ Bonnes pratiques
+
+* quand utiliser exceptions
+* éviter abus
+* messages clairs
+* ne pas attraper n’importe quoi
+
+---
+
+# 🔥 BONUS (niveau ++ / souvent en exam)
+
+* multi-catch
+* try-with-resources
+* exceptions personnalisées avec constructeur
+
+---
+
+# 🧠 Résumé simple
+
+👉 Tu dois maîtriser :
+
+* comprendre **le type d’exception**
+* savoir **gérer (`try/catch`)**
+* savoir **propager (`throws`)**
+* savoir **lancer (`throw`)**
+
+---
+
+# 🚀 Méthode de travail conseillée
+
+1. comprendre la hiérarchie
+2. comprendre checked vs unchecked
+3. pratiquer try/catch
+4. pratiquer throw / throws
+5. faire 2–3 exercices
+
+```
 
 <!-- NOTE -->
 ---
