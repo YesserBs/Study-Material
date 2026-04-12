@@ -535,3 +535,13 @@ public class Main {
     }
 }
 ```
+Most frequent ones :
+* `nextLine()`
+* `next()`
+* `nextInt()`
+* `nextDouble()`
+* `nextFloat()`
+* `nextLong()`
+* `nextShort()`
+* `nextByte()`
+* `nextBoolean()`
