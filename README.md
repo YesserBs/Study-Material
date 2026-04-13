@@ -586,9 +586,9 @@ Qui sait peut etre les robots humanoides du future utiliserons mon code ?
 
 5 - En continu :
         chercher du sens
+        possibilité de définir une menace fictive (objectif choisi)
         réfléchir
         remettre en question le modèle
-        possibilité de définir une menace fictive (objectif choisi)
 
 6 - return to 0
 ```
