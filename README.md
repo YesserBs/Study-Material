@@ -547,3 +547,46 @@ Most frequent ones :
 * `nextShort()`
 * `nextByte()`
 * `nextBoolean()`
+
+<!-- NOTE -->
+---
+title: le code de la vie
+
+tags:
+  - thinking
+---
+
+```
+0 - Réfléchit à ce modèle (il n'est pas fixe)
+
+1 - On vit en groupe (alliances / rivalités)
+
+2 - Détecter état :
+    si (menace) → mode survie
+    sinon si (curiosité) → mode exploration
+    sinon → mode routine
+
+3 - si (menace) {
+        agir (résoudre / éviter / défendre)
+        si (win) {
+            apprendre
+            devenir plus compétent
+        } sinon {
+            analyser
+            s’adapter
+        }
+   }
+
+4 - si (safe) {
+        explorer
+        expérimenter
+        créer
+   }
+
+5 - En continu :
+        chercher du sens
+        réfléchir
+        remettre en question le modèle
+
+6 - return to 0
+```
