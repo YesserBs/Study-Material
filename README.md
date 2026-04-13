@@ -385,51 +385,6 @@ tags:
 
 edu.sorbonne-paris-nord.fr
 
-
-
-<!-- NOTE -->
----
-title: Partie stats en proba
-
-tags:
-  - proba
----
-
-J'expliquerais une autre fois :
-## Estimateurs
-
-Un estimateur est une valeur calculée à partir des données pour approximer un paramètre inconnu.
-
-Exemple :
-La moyenne empirique :
-
-$$
-\hat{\mu} = \frac{1}{n} \sum X_i
-$$
-
-####  Méthode des moments
-
-On égalise les moments théoriques avec les moments empiriques.
-
-Exemple :
-E(X) = μ → on remplace par la moyenne empirique
-
-Donc :
-μ ≈ moyenne des données
-
-####  Maximum de vraisemblance (MLE)
-
-Objectif : trouver le paramètre qui rend les données les plus probables.
-
-### Étapes :
-1. Écrire la vraisemblance :
-   produit des probabilités ou densités
-2. Prendre le logarithme
-3. Dériver
-4. Résoudre : dérivée = 0
-5. Vérifier que la dérivée seconde est négative (maximum)
-
-
 <!-- NOTE -->
 ---
 title: cmc_stat1
@@ -510,6 +465,53 @@ theta_hat_obs = g(x1, ..., xn)
 * Estimation = valeur retournée
 
 Pour le moment tu dois capter que (X1, ..., Xn) est un échantillon ou chaque élément suit la VAR X, et les valeurs concrètes observées c'est (x1, ..., xn), un estimateur c'est une fonction qui va nous permetre d'estimer les parametres, l'estimation est l'application de la fonction aux données qu'on a, qu'on a observé.
+
+#### Autres trucs à voir:
+- la méthode des moments en un mot
+- Maximum de vraisemblance (MLE)
+- le risque quadratique
+- intervalle de confiance
+
+## Estimateurs
+
+Un estimateur est une valeur calculée à partir des données pour approximer un paramètre inconnu.
+
+Exemple :
+La moyenne empirique :
+
+$$
+\hat{\mu} = \frac{1}{n} \sum X_i
+$$
+
+####  Méthode des moments
+
+On égalise les moments théoriques avec les moments empiriques.
+
+Exemple :
+E(X) = μ → on remplace par la moyenne empirique
+
+Donc :
+μ ≈ moyenne des données
+
+####  Maximum de vraisemblance (MLE)
+
+Objectif : trouver le paramètre qui rend les données les plus probables.
+
+### Étapes :
+1. Écrire la vraisemblance :
+   produit des probabilités ou densités
+2. Prendre le logarithme
+3. Dériver
+4. Résoudre : dérivée = 0
+5. Vérifier que la dérivée seconde est négative (maximum)
+
+**Le risque quadratique** est une fonction qui mesure l’erreur moyenne au carré entre une estimation et la vraie valeur.<br>
+R de téta chapeau = l'espérence de ((téta chapeau - téta)^2)<br>
+il peut etre représenté sous autres formes (Variance - Biais au carré)<br>
+
+**intervalle de confiance**<br>
+🔹 Qu’est-ce qu’un intervalle de confiance ?<br>
+Un intervalle de confiance est une fourchette de valeurs dans laquelle on pense que la vraie valeur d’un paramètre se trouve, avec un certain niveau de confiance.
 
 <!-- NOTE -->
 ---
