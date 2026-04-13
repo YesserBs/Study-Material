@@ -587,6 +587,7 @@ tags:
         chercher du sens
         réfléchir
         remettre en question le modèle
+        possibilité de définir une menace fictive (objectif choisi)
 
 6 - return to 0
 ```
