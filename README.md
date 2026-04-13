@@ -556,6 +556,7 @@ tags:
   - thinking
 ---
 
+Qui sait peut etre les robots humanoides du future utiliserons mon code ?
 ```
 0 - Réfléchit à ce modèle (il n'est pas fixe)
 
