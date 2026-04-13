@@ -570,6 +570,7 @@ Qui sait peut etre les robots humanoides du future utiliserons mon code ?
 3 - si (menace) {
         agir (résoudre / éviter / défendre)
         si (win) {
+            // s'adapter
             apprendre
             devenir plus compétent
         } sinon {
@@ -588,7 +589,6 @@ Qui sait peut etre les robots humanoides du future utiliserons mon code ?
         chercher du sens
         possibilité de définir une menace fictive (objectif choisi)
         réfléchir
-        remettre en question le modèle
 
 6 - return to 0
 ```
