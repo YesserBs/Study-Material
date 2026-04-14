@@ -396,13 +396,11 @@ tags:
 
 ## Théorème central limite
 
-Si \( X_1, ..., X_n \) sont i.i.d. de moyenne \( \mu \) et variance \( \sigma^2 \), alors pour \( n \) grand :
+Si X1, ..., Xn sont i.i.d. de moyenne μ et variance σ², alors pour n grand :
 
-\[
-\sqrt{n} \, \frac{\bar{X}_n - \mu}{\sigma} \xrightarrow[]{\mathcal{L}} \mathcal{N}(0,1)
-\]
+sqrt(n) * (X̄n - μ) / σ → N(0,1)
 
-Donc : la moyenne \( \bar{X}_n \) suit approximativement une loi normale.
+Donc : la moyenne X̄n suit approximativement une loi normale.
 
 #### 🎯 Objectif
 
