@@ -394,6 +394,16 @@ tags:
   - stats
 ---
 
+## Théorème central limite
+
+Si \( X_1, ..., X_n \) sont i.i.d. de moyenne \( \mu \) et variance \( \sigma^2 \), alors pour \( n \) grand :
+
+\[
+\sqrt{n} \, \frac{\bar{X}_n - \mu}{\sigma} \xrightarrow[]{\mathcal{L}} \mathcal{N}(0,1)
+\]
+
+Donc : la moyenne \( \bar{X}_n \) suit approximativement une loi normale.
+
 #### 🎯 Objectif
 
 * Objectif : `P(event) = ?`
