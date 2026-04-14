@@ -396,7 +396,7 @@ tags:
 
 ## Théorème central limite
 
-Si X1, ..., Xn sont i.i.d. de moyenne μ et variance σ², alors pour n grand :
+Si X1, ..., Xn sont i.i.d. (indépendantes et identiquement distribuées) de moyenne μ et variance σ², alors pour n grand :
 
 sqrt(n) * (X̄n - μ) / σ → N(0,1)
 
